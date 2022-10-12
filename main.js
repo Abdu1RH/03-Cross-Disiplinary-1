@@ -1,11 +1,10 @@
 Chart.register(ChartDataLabels);
-
+//Chart.default.color = "#ffffff";
 const ctx = document.querySelector('#chart').getContext('2d');
 const chart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ["Rock                              ", "Latin", "                        Alternative & Punk", "                       Metal", "                     TV Shows"],
-
         datasets: [
             {
                 label: "Rock",
@@ -33,15 +32,28 @@ const chart = new Chart(ctx, {
         },
 
         scales: {
-            y: {
-                grid: {
-                    color: "gray"
+            x:{
+                ticks: {
+                    color: "white"
                 }
             },
 
+            y: {
+                grid: {
+                    color: "gray"
+                },
+                ticks: {
+                    color: "white"
+                }
+            }
         },
 
         plugins: {
+            legend:{
+                labels:{
+                    color:"white"
+                }
+            },
             title: {
                 display: true,
                 text: "Antal solgte sange i musikgenrene",
@@ -58,7 +70,9 @@ const chart = new Chart(ctx, {
                     size: 10
                 }
             }
+
         }
     }
 
 });
+

@@ -4,7 +4,7 @@ const ctx = document.querySelector('#chart').getContext('2d');
 const chart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Rock                              ", "Latin", "                        Alternative & Punk", "                       Metal", "                     TV Shows"],
+        labels: [        "Rock                                           ", "Latin", "                                           Alternative & Punk", "                                            Metal", "                                            TV Shows"],
         datasets: [
             {
                 label: "Rock",
@@ -18,7 +18,7 @@ const chart = new Chart(ctx, {
                 backgroundColor: ["yellow"],
             },
             {
-                label: "Andre",
+                label: "Others",
                 data: [0, 0, 22, 22, 14],
                 backgroundColor: ["gray"],
 
@@ -56,7 +56,7 @@ const chart = new Chart(ctx, {
             },
             title: {
                 display: true,
-                text: "Antal solgte sange i musikgenrene",
+                text: "Amount of sold songs in the different genres 2010-2012",
                 color: "white"
             },
 

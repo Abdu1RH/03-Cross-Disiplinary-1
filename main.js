@@ -56,7 +56,7 @@ const chart = new Chart(ctx, {
             },
             title: {
                 display: true,
-                text: "Amount of sold songs in the different genres 2010-2012",
+                text: "Amount of sold songs in the different genres 2010-2012 in USA",
                 color: "white"
             },
 
